@@ -1,0 +1,4 @@
+repository "climb-game@4673629277658@cloud"
+  path "/"
+    br "/main"
+    co "/main"

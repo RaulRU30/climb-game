@@ -9,7 +9,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5124311866375873652}
-  - component: {fileID: 5528267258835761792}
   m_Layer: 0
   m_Name: spawn-manager
   m_TagString: Untagged
@@ -32,17 +31,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &5528267258835761792
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2156682728973723640}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 3eb130ba611d04543a40005b8ed89400, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerPrefab: {fileID: 1569567275578948261, guid: 5892ab3677d0e30408eeecfe0002bf95, type: 3}
-  spawnPoint: {fileID: 0}

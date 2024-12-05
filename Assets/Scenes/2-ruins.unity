@@ -38,7 +38,6 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.15984765, g: 0.33487353, b: 0.47905412, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -747,6 +746,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 9151881785268217960, guid: 5cf16da669b522146a83bd0ced0cb99d, type: 3}
   m_PrefabInstance: {fileID: 27105937}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &28940212 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5528267258835761792, guid: ece20c616b6cb1e45800bb668c6bceab, type: 3}
+  m_PrefabInstance: {fileID: 1587849162}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3eb130ba611d04543a40005b8ed89400, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &30122388
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -57066,8 +57076,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fe3c100198b0ac347a44ca29b9103880, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  timeRemaining: 60
+  initialTime: 60
   timerText: {fileID: 1641775666}
+  spawnHandler: {fileID: 28940212}
 --- !u!1 &1642407652 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 100000, guid: e5da93bf3ff477c4f8f88f51e419c805, type: 3}

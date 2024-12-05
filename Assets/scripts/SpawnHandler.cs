@@ -6,13 +6,17 @@ public class SpawnHandler : MonoBehaviour
 {
     [SerializeField] private GameObject playerPrefab;
     [SerializeField] private Transform spawnPoint;
+    [SerializeField] private Transform teleport;
+
+    private GameObject spawnedPlayer;
 
     void Start()
     {
         if (spawnPoint != null)
         {
             // Instancia el personaje en la posición y rotación del punto de spawn
-            Instantiate(playerPrefab, spawnPoint.transform.position, spawnPoint.transform.rotation);
+            Vector3 adjustedPosition = spawnPoint.transform.position + new Vector3(0, 10, 0);
+            spawnedPlayer = Instantiate(playerPrefab, adjustedPosition, spawnPoint.transform.rotation);
         }
 
     }
@@ -20,6 +24,10 @@ public class SpawnHandler : MonoBehaviour
 
     void Update()
     {
+        if (spawnedPlayer != null && Input.GetKeyDown(KeyCode.P))
+        {
+            spawnedPlayer.transform.position = teleport.position;
+        }
 
     }
 }

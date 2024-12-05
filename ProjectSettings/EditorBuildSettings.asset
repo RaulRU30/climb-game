@@ -6,9 +6,18 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/0-menu.unity
+    guid: c78df7fa724ddc94b8604d5b123a653a
+  - enabled: 1
+    path: Assets/Scenes/1-ny.unity
+    guid: 713ac6b18e9a4164cae166283b85b599
+  - enabled: 1
+    path: Assets/Scenes/2-ruins.unity
+    guid: 4446f33cc1d98584b933f6f234fe647d
+  - enabled: 1
+    path: Assets/Scenes/3-night-city.unity
+    guid: 3dd6985d248a2724291b46a30456112a
+  - enabled: 1
     path: Assets/Scenes/dock-castle-level.unity
     guid: f4fc660ad7cf6eb4eb8cd6d109f7608e
-  - enabled: 1
-    path: Assets/Scenes/night-city-level.unity
-    guid: 3dd6985d248a2724291b46a30456112a
   m_configObjects: {}

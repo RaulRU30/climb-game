@@ -10,31 +10,28 @@ public class TeleportHandler : MonoBehaviour
     [SerializeField] private string sceneToLoad;
     [SerializeField] private Image fadeImage;
     [SerializeField] private float fadeDuration = 1.0f;
+    private bool isPlayerInTrigger = false;
     // Start is called before the first frame update
-    void Start()
-    {
-
-    }
 
     // Update is called once per frame
     void Update()
     {
+        if (isPlayerInTrigger && Input.GetKeyDown(KeyCode.E))
+        {
+            StartCoroutine(LoadSceneWithFade());
+        }
 
     }
 
-    private void OnTriggerEnter(Collider other)
+    public void OnTriggerEnter(Collider other)
     {
-        // Verifica que sea el jugador u otro objeto específico
         if (other.CompareTag("Player"))
         {
-            vThirdPersonInput playerController = other.GetComponent<vThirdPersonInput>();
-            playerController.horizontalInput = "";
-            playerController.verticallInput = "";
-            StartCoroutine(LoadSceneWithFade());
+            isPlayerInTrigger = true;
         }
     }
 
-    private IEnumerator LoadSceneWithFade()
+    public IEnumerator LoadSceneWithFade()
     {
         yield return StartCoroutine(Fade(0, 1));
 

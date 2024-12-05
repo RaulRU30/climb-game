@@ -26,6 +26,7 @@ public class SpawnHandler : MonoBehaviour
     {
         if (spawnedPlayer != null && Input.GetKeyDown(KeyCode.P))
         {
+            Debug.Log("Teleporting player to teleport point");
             spawnedPlayer.transform.position = teleport.position;
         }
 

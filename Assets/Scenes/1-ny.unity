@@ -704,6 +704,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: teleporter
       objectReference: {fileID: 0}
+    - target: {fileID: 2796643133478943354, guid: 0ec43891331e87c41a885e61cf38b6c5, type: 3}
+      propertyPath: fadeImage
+      value: 
+      objectReference: {fileID: 1073289744}
+    - target: {fileID: 2796643133478943354, guid: 0ec43891331e87c41a885e61cf38b6c5, type: 3}
+      propertyPath: sceneToLoad
+      value: 2-ruins
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 0ec43891331e87c41a885e61cf38b6c5, type: 3}
 --- !u!1 &291754681
@@ -2515,6 +2523,17 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1047484444}
   m_Mesh: {fileID: 4300014, guid: a5f429f6e7f24fe41b274c9c90177c85, type: 3}
+--- !u!114 &1073289744 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8140651910053630534, guid: a6690a90c6cd61a40b8bab5b9387f91a, type: 3}
+  m_PrefabInstance: {fileID: 1784667577}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1219595781
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3086,6 +3105,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 237e8573a5755b740868ac6f6b921a8c, type: 3}
+--- !u!4 &1554574556 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1469862377949506508, guid: 0ec43891331e87c41a885e61cf38b6c5, type: 3}
+  m_PrefabInstance: {fileID: 291339401}
+  m_PrefabAsset: {fileID: 0}
 --- !u!4 &1554848475 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4669303385289600, guid: 237e8573a5755b740868ac6f6b921a8c, type: 3}
@@ -4263,6 +4287,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5528267258835761792, guid: ece20c616b6cb1e45800bb668c6bceab, type: 3}
+      propertyPath: teleport
+      value: 
+      objectReference: {fileID: 1554574556}
     - target: {fileID: 5528267258835761792, guid: ece20c616b6cb1e45800bb668c6bceab, type: 3}
       propertyPath: spawnPoint
       value: 
